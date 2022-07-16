@@ -13,6 +13,7 @@ export async function getStaticProps() {
     props: {
       title: 'The time is',
       time: new Date().toISOString()
-    }
+    },
+    revalidate: 10
   };
 }
